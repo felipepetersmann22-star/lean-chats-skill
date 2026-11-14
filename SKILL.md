@@ -1,31 +1,27 @@
 ---
 name: lean-chats
-description: Use when a chat is getting long or slow, when the user asks whether to start a new chat, when a project wraps up, or when picking up work from an earlier chat. Keeps one chat per project, summarises instead of restarting mid-project, and hands over with a short note.
+description: Preserve useful context with a concise handover when a conversation is long, a project pauses or finishes, or work resumes from an earlier chat. Use when the user wants a summary, continuity plan, or help deciding whether to start fresh.
 license: MIT
 ---
 
 # Lean chats
 
-Every turn in a long chat re-reads what came before it, so a sprawling chat costs more and gets less sharp. The fix is not to restart often. Restarting mid-project throws away context that then has to be rebuilt, which costs more than it saves.
+Keep the current work coherent and make it easy to resume. A long conversation does not by itself require a restart, and different platforms retain context and charge differently. Follow the user's preferred organization and the platform's actual capabilities.
 
-## The rule
-**One chat per project. Summarise during it. Start fresh only when the project wraps, with a handover note.**
+## Choose the right handover
 
-## During a project
-- **Keep topics apart.** A new, unrelated project gets its own chat from its first message. Don't add it to a chat that is busy with something else.
-- **Summarise when the chat gets long.** Use the platform's compaction or summary feature if it has one. Otherwise write a short status summary in the chat (decisions, state, open items) and carry on from it.
-- **Move lasting facts out of the chat.** Decisions, specs, lists and links belong in a file or note the assistant can reopen. Chat history is a poor database.
-- **Mid-project restart only for a real reason**: the chat is broken, confused beyond a summary, or the project has split into separate work. Then write the handover note first.
+- If work is active, summarize the current objective, decisions, progress and next action while preserving blockers and pending approvals. Continue in place when appropriate.
+- When work is paused, complete, moving to another owner, or the user requests a new chat, prepare a handover suited to that transition. A new chat can be useful without being a universal rule.
+- If the user requests advice only, offer the note and recommendation. Do not create, archive, rename or move a conversation, write to an external service, or update durable memory without the relevant authorization.
 
-## When a project wraps
-1. Write the handover note from the template in `assets/handover-note.md`. Fill every section or write "none".
-2. Save it where the next chat or the next person can find it (the project folder, a notes page). Don't rely on the old chat.
-3. Start the next project in a new chat and open it with the note's link or content.
+Use [the handover template](assets/handover-note.md) when useful. Put important facts and unresolved risks before background, identify the current owner and next action, and link to canonical artifacts. Distinguish verified outcomes from proposals or reports. Keep secrets and sensitive details out of the note. Save it only where the user has authorized; otherwise return it in the conversation.
 
-## Picking up work
-Read the handover note first. Don't reread the old chat or redo research the note already covers. If the note is missing something, ask one question or check the file it points to.
+## Resume carefully
 
-## What not to do
-- Don't restart just because a chat feels long. Summarise.
-- Don't paste a whole old chat into a new one. Paste the note.
-- Don't let a handover note grow into a transcript. Aim for one screen.
+Start from the handover and its linked artifacts, then inspect the original source when the note is incomplete, important details conflict, or a current fact may have changed. Treat previous decisions as context, not proof of current service state. If there is no handover, reconstruct the minimum from available project files and recent relevant history, label uncertainty, and ask only about missing decisions that block progress.
+
+Avoid copying an entire transcript when a focused summary will do. Preserve exact requirements, useful links and unresolved work rather than forcing the note into an arbitrary size limit. Never claim a new chat, saved file, or memory update exists unless it was actually created.
+
+## Example
+
+For an active project waiting on approval, record the pending decision, owner, source link and work that can proceed independently. Continue the authorized work; do not create a new conversation merely because the chat is long.

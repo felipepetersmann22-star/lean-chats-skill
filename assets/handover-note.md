@@ -1,29 +1,24 @@
-# Handover: [project name]
+# Handover: [project or task]
 
 Date: [YYYY-MM-DD]
-Status: [wrapped / paused / handed to someone else]
+Status: [active / paused / complete / transferred]
 
-## Goal
-[One or two lines: what this project was for and what "done" means.]
-
-## Outcome
-[What was delivered, where it lives.]
-
-## Decisions and why
-- [Decision]: [reason, one line]
+## Goal and constraints
+[What success means, current scope and important user decisions.]
 
 ## Current state
-[What works, what is half done.]
+[What is complete, what is in progress, and what was verified. Label proposals and unverified reports.]
 
-## Open items
-- [ ] [Item, owner, next step]
+## Decisions and evidence
+- [Decision, reason, and source or artifact link]
 
-## Where things live
-- Files: [paths or links]
-- Accounts, tools, settings: [names only, never passwords or keys]
+## Open work and blockers
+- [Item, owner if known, next action, and deadline only if established]
+- [Pending approval, dependency, or uncertainty]
 
-## Don't redo
-[Research, tests or options already settled, so nobody repeats them.]
+## Resources
+- [Canonical files, repositories, pages and links]
+- [Relevant tools or account names, without credentials or sensitive details]
 
 ## Next step
-[The single first thing to do when this is picked up.]
+[The first actionable step, including what can continue while a blocker remains.]
